@@ -21,12 +21,19 @@ public class Quiz {
     @PrimaryKey(autoGenerate = true)
     private int id;
     private List<Question> questionList;
-    private String title;
+    public String title;
     private String description = " quiz desciption";
 
     public Quiz() {
         title = "titile" + String.valueOf(new Random().nextInt());
         questionList = new ArrayList<>();
+    }
+
+    public Quiz(int theId, List<Question>qList, String theTitle, String desc){
+        id = theId;
+        questionList = qList;
+        title = theTitle;
+        description = desc;
     }
 
     public List<Question> getQuestionList() {

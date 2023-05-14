@@ -23,11 +23,6 @@
         android:label="@string/menu_createquiz"
         tools:layout="@layout/fragment_create_quiz" />
 
-    <activity
-        android:id="@+id/nav_map"
-        android:name="com.fit.quizcrafter.ui.map.MapActivity"
-        android:label="@string/menu_map"
-        tools:layout="@layout/activity_map" />
 
     <fragment
         android:id="@+id/nav_logout"
